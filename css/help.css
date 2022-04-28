@@ -623,6 +623,7 @@ td.no-border-top-bottom   { border-top: 0 !important; border-bottom: 0 !importan
    code formatting
    --------------------------------------------------
 */
+/*
 span.codeinline { font-family: Courier New, monospace; }
 pre.code {
   font-size: 8pt;
@@ -675,7 +676,7 @@ pre.code {
   pre.code { max-height: none !important; height: auto !important;}
   div.codeBoxTitle { display: none; }
 }
-
+*/
 /*--------------------------------------------------
   SMC: content types
 */

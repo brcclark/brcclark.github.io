@@ -9,6 +9,35 @@
   <link rel="stylesheet" href="./ css/help.css">
   <link rel="stylesheet" href="./ css/styles.css">
 
+  <script>var base_url = '.';</script>
+  
+  <!-- This is to handle the showing/hidding of elements in a dropdown -->
+  <script type="text/javascript">
+    function toggleDropDown(elem){
+      var children = elem.children;
+      for(var i=0; i < children.length; i++){
+        if(children[i].style.display == 'none' || children[i].nodeName == 'SUMMARY'){
+          children[i].style.display = '';
+        }
+        else{
+          children[i].style.display = 'none';
+        }
+      }
+    }
+    window.onload = function() {
+        var details = document.getElementsByTagName('details');
+        for(var i = 0; i < details.length; i++) {
+            var detail = details[i];
+            var cls = detail.className;
+            var dropdownCls = "dropdown-ct";
+            var indx = cls.indexOf(dropdownCls);
+            if(indx >= 0){
+              detail.onclick = toggleDropDown.bind(detail,detail);
+            }            
+        }
+    }
+  </script>
+
   
 
   
