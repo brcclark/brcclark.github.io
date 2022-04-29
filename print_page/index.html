@@ -5,9 +5,9 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="css/theme.css">
-  <link rel="stylesheet" href="css/help.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="../css/theme.css">
+  <link rel="stylesheet" href="../css/help.css">
+  <link rel="stylesheet" href="../css/styles.css">
 
   <!-- This is to handle the showing/hidding of elements in a dropdown -->
   <script type="text/javascript">
@@ -38,52 +38,95 @@
   </script>
 
   
-  <link href="css/print-site-enum-headings1.css" rel="stylesheet">
+  <link href="../css/print-site-enum-headings1.css" rel="stylesheet">
   
-  <link href="css/print-site-enum-headings2.css" rel="stylesheet">
+  <link href="../css/print-site-enum-headings2.css" rel="stylesheet">
   
-  <link href="css/print-site-enum-headings3.css" rel="stylesheet">
+  <link href="../css/print-site-enum-headings3.css" rel="stylesheet">
   
-  <link href="css/print-site-enum-headings4.css" rel="stylesheet">
+  <link href="../css/print-site-enum-headings4.css" rel="stylesheet">
   
-  <link href="css/print-site-enum-headings5.css" rel="stylesheet">
+  <link href="../css/print-site-enum-headings5.css" rel="stylesheet">
   
-  <link href="css/print-site-enum-headings6.css" rel="stylesheet">
+  <link href="../css/print-site-enum-headings6.css" rel="stylesheet">
   
-  <link href="css/print-site.css" rel="stylesheet">
-  
-
-  
+  <link href="../css/print-site.css" rel="stylesheet">
   
 
-  <title>B&R Industrial Automation Theme - MkDocs B&R Industrial Theme</title>
+  
+  
 
-</head>
+  <title>Print Site - MkDocs B&R Industrial Theme</title>
+
+
+        <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            remove_material_navigation();remove_mkdocs_theme_navigation();generate_toc();
+        })
+        </script>
+        </head>
 
 <body>
   
-  <h1 id="br-industrial-automation-theme">B&amp;R Industrial Automation Theme</h1>
+  <div id="print-site-page" class="print-site-enumerate-headings print-site-enumerate-figures">
+        <section id="print-site-cover-page">
+            
+<div>
+
+    
+        <h1>MkDocs B&R Industrial Theme</h1>
+    
+
+</div>
+
+
+<table>
+
+    
+
+    
+
+    
+
+    
+
+</table>
+
+
+
+
+
+        </section>
+        
+        <section class="print-page">
+            <div id="print-page-toc" data-toc-depth="3">
+                <nav role='navigation' class='print-page-toc-nav'>
+                <h1 class='print-page-toc-title'>Table of Contents</h1>
+                </nav>
+            </div>
+        </section>
+        <section class="print-page" id="index"><h1 id="index-br-industrial-automation-theme">B&amp;R Industrial Automation Theme</h1>
 <p>This is a base theme for use with MkDocs in the style of B&amp;R Industrial Automation's documentation. You can see the style in action with this documentation. </p>
 <div class="admonition notice danger">
 <p class="admonition-title">CSS and HTML Incompatibilities</p>
 <p>It should be noted, that much of the style requirements are such to be able to support exporting for the AS Help as well as for standard webbrowsers. Because of this, many CSS or HTML elements may not be supported</p>
 </div>
-<h2 id="installation">Installation</h2>
+<h2 id="index-installation">Installation</h2>
 <pre><code>pip install mkdocs-br-industrial-theme
 </code></pre>
-<h2 id="using-the-theme">Using The Theme</h2>
+<h2 id="index-using-the-theme">Using The Theme</h2>
 <p>In your mkdown.yml file set the theme usnig name brtheme.</p>
 <pre><code>theme:
     name: brtheme
 </code></pre>
-<h2 id="extensions">Extensions</h2>
+<h2 id="index-extensions">Extensions</h2>
 <p>The adnomitions and pymdownx.details python markdown extension needs to be added to your mkdocs.yml file.</p>
 <pre><code class="language-yaml">markdown_extensions:
     - admonition
     - pymdownx.details
 </code></pre>
-<h2 id="general-markdown">General Markdown</h2>
-<h3 id="blue-tip-callout">Blue Tip Callout</h3>
+<h2 id="index-general-markdown">General Markdown</h2>
+<h3 id="index-blue-tip-callout">Blue Tip Callout</h3>
 <p>This is accomplished using admonitions with the <code>notice</code> and <code>tips</code> classes. To implement, the following syntax can be used.</p>
 <pre><code class="language-markdown">    !!! notice tips &quot;Optional Title&quot;
         Notice text
@@ -92,7 +135,7 @@
 <p class="admonition-title">Optional Title</p>
 <p>Notice tip text</p>
 </div>
-<h3 id="red-danger-callout">Red Danger Callout</h3>
+<h3 id="index-red-danger-callout">Red Danger Callout</h3>
 <p>This is accomplished using admonitions with the <code>notice</code> and <code>danger</code> classes. To implement, the following syntax can be used.</p>
 <pre><code class="language-markdown">    !!! notice danger &quot;Optional Title&quot;
         Notice text
@@ -101,7 +144,7 @@
 <p class="admonition-title">Optional Title</p>
 <p>Notice danger text</p>
 </div>
-<h2 id="tables">Tables</h2>
+<h2 id="index-tables">Tables</h2>
 <p>Tables can be used with normal markdown syntax</p>
 <pre><code class="language-markdown">First Header  | Second Header
 ------------- | -------------
@@ -126,7 +169,7 @@ Content Cell  | Content Cell
 </tr>
 </tbody>
 </table>
-<h2 id="dropdown">DropDown</h2>
+<h2 id="index-dropdown">DropDown</h2>
 <p>Drop down dynamic show/hide elements are also supported. This is accomplished using the markdown extension <code>details</code>.  To create a drop down the following syntax must be used:</p>
 <pre><code class="language-markdown">    ??? dropdown-ct &quot;Optional Title&quot;
         Make sure to use include the dropdown-ct class name.
@@ -140,12 +183,18 @@ Content Cell  | Content Cell
 <p>One more time.</p>
 </details>
 </details>
-<p><a href="Known%20Issues/">Known Issues</a></p>
+<p><a href="#known%20issues">Known Issues</a></p></section><section class="print-page" id="known%20issues"><h1 id="known%20issues-known-issues">Known Issues</h1>
+<p>There are currently a few known (and likely even more unknown) issues.</p>
+<div class="admonition notice tips">
+<p class="admonition-title">Known Issues</p>
+<ul>
+<li>Lists do not currently work.</li>
+<li>codeblocks</li>
+<li>Probably other things as well..</li>
+</ul>
+</div></section></div>
   
 
-  
-    <a href="print_page/" title="Print Site" class="md-content__button md-icon">
-    </a>
   
 </body>
 
